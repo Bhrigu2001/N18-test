@@ -16,7 +16,7 @@ mongoose.connect('mongodb://localhost:27017/musicApp', { useNewUrlParser: true, 
 // Routes
 app.use('/api/users', require('./routes/users'));
 app.use('/api/tracks', require('./routes/tracks'));
-app.use('/api/playlists', require('./routes/playlists'));
+app.use('/api/playlists', require('./playlists'));
 
 // Start Server
 const PORT = process.env.PORT || 5000;
